@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+  datascience:
+    image: jupyter/datascience-notebook
+    volumes:
+      - ./:/home/jovyan/work
+    ports:
+      - 8888:8888
+    container_name: notebooks
